@@ -6,7 +6,7 @@
 /*   By: dmlasko <dmlasko@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 16:35:43 by dmlasko           #+#    #+#             */
-/*   Updated: 2024/08/13 17:34:41 by dmlasko          ###   ########.fr       */
+/*   Updated: 2024/12/03 16:23:15 by dmlasko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,10 +55,10 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 
-	if (size != 0 && dest) 
+	if (size != 0 && dest)
 	{
 		i = 0;
-		while (i < (size - 1) && src[i]) 
+		while (i < (size - 1) && src[i])
 		{
 			dest[i] = src[i];
 			i++;
@@ -94,7 +94,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (substr);
 }
 
-char	*ft_strjoin(char *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*concat_str;
 	char	*ptr;
